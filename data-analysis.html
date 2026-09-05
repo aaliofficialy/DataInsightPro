@@ -4,72 +4,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Data Analysis & File Upload | DataInsightPro</title>
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 <header class="nav">
   <a class="logo" href="index.html"><span>DI</span> DataInsightPro</a>
   <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
   <nav id="siteNav">
-    <a href="index.html">Home</a>
-    <a href="data-analysis.html">Analysis</a>
-    <a href="dashboard.html">Dashboards</a>
-    <a href="excel-analytics.html">Excel</a>
-    <a href="case-studies.html">Case Studies</a>
-    <a class="nav-cta" href="contact.html">Get Started</a>
+    <a href="index.html">Home</a><a href="data-analysis.html">Analysis</a><a href="dashboard.html">Dashboards</a><a href="excel-analytics.html">Excel</a><a href="case-studies.html">Case Studies</a><a class="nav-cta" href="contact.html">Get Started</a>
   </nav>
 </header>
 <main>
 <section class="hero container">
   <div>
     <p class="eyebrow">DATA ANALYSIS • FILE INTAKE</p>
-    <h1>Send us your data. We’ll turn it into insight.</h1>
-    <p class="lead">Upload almost any business file — Excel, CSV, PDF, Word, PowerPoint, images or other project files — and send it directly to the DataInsightPro team by email.</p>
-    <div class="trust-row">
-      <span>✓ Excel & CSV</span><span>✓ PDF & Word</span><span>✓ Images & reports</span><span>✓ Any file type</span>
-    </div>
+    <h1>Upload your data. Get instant insights.</h1>
+    <p class="lead">Upload Excel, CSV, JSON, TSV or text data and the browser will automatically profile the dataset, calculate data-quality metrics and generate charts from detected numeric fields.</p>
+    <div class="trust-row"><span>✓ Excel & CSV</span><span>✓ JSON & TSV</span><span>✓ Automatic metrics</span><span>✓ Charts</span></div>
+    <p class="muted" style="margin-top:18px">For PDF, Word, PowerPoint, images and other files, use the upload form to send the original file for project review.</p>
   </div>
   <div class="result-card upload-card">
-    <div class="card-top"><span>Secure File Intake</span><b>EMAIL</b></div>
-    <form action="https://formsubmit.co/mohammad.ali.official@hotmail.com" method="POST" enctype="multipart/form-data" class="file-form">
-      <input type="hidden" name="_subject" value="New DataInsightPro File Submission">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="true">
-      <input type="hidden" name="_next" value="https://aaliofficialy.github.io/DataInsightPro/data-analysis.html?sent=1">
-      <label>Full Name<input type="text" name="name" placeholder="Your name" required></label>
-      <label>Email<input type="email" name="email" placeholder="your@email.com" required></label>
-      <label>Project / Requirement<textarea name="message" rows="3" placeholder="What would you like us to do with this file?"></textarea></label>
-      <label>Upload File<input id="projectFile" type="file" name="attachment" required></label>
-      <p class="muted small">Accepted: any common file type. Please keep the file within the form service's upload limit.</p>
-      <button class="btn primary" type="submit">Upload & Send File</button>
-      <div id="uploadStatus" class="muted" aria-live="polite"></div>
-    </form>
+    <div class="card-top"><span>Instant Data Analyzer</span><b>LOCAL</b></div>
+    <label class="upload"><input id="csvFile" type="file" accept=".csv,.tsv,.xlsx,.xls,.json,.txt,.log,text/csv,application/json,text/plain"><span>Choose Data File</span></label>
+    <div id="fileStatus" class="muted">No file selected.</div>
+    <div id="results" class="result-card"><div class="empty">Upload a data file to generate rows, columns, missing-cell metrics and charts.</div></div>
   </div>
 </section>
-<section class="section container">
-  <div class="section-head"><div><p class="eyebrow">OPTIONAL BROWSER CHECK</p><h2>Quick CSV analysis</h2><p class="muted">If you only want an instant local check, you can still analyze a CSV in your browser without sending it anywhere.</p></div></div>
-  <div class="hero-card">
-    <label class="upload"><input id="csvFile" type="file" accept=".csv,text/csv"><span>Analyze CSV Locally</span></label>
-    <div id="fileStatus" class="muted">No CSV selected.</div>
-    <div id="results" class="result-card"><div class="empty">Choose a CSV to generate rows, columns, missing-cell and completeness metrics.</div></div>
-  </div>
+<section class="section analyzer-wrap">
+  <div class="container"><div class="section-head"><div><p class="eyebrow">WHAT IT DOES</p><h2>Automatic analysis in your browser.</h2><p class="muted">Your selected data file is processed locally for the instant preview. No server upload is required for this analysis.</p></div></div>
+  <div class="grid"><article><span class="icon">01</span><h3>Dataset profile</h3><p>Rows, columns, numeric fields and missing cells are detected automatically.</p></article><article><span class="icon">02</span><h3>Data quality</h3><p>Completeness is estimated from populated cells so you can spot quality issues quickly.</p></article><article><span class="icon">03</span><h3>Charts</h3><p>Detected numeric columns are visualized automatically to reveal patterns at a glance.</p></article></div></div>
 </section>
 <section class="section container">
-  <div class="section-head"><div><p class="eyebrow">WORKFLOW</p><h2>A practical analysis process.</h2></div></div>
-  <div class="grid">
-    <article><span class="icon">01</span><h3>Receive</h3><p>Send your source file and describe the business question or reporting requirement.</p></article>
-    <article><span class="icon">02</span><h3>Analyze</h3><p>Review structure, data quality, metrics, trends and useful dimensions.</p></article>
-    <article><span class="icon">03</span><h3>Deliver</h3><p>Turn the findings into dashboards, reports, cleaned data or decision-ready insights.</p></article>
-  </div>
+  <div class="section-head"><div><p class="eyebrow">PROJECT UPLOAD</p><h2>Need analysis of another file type?</h2><p class="muted">Send PDF, Word, PowerPoint, images or any other project file to the team with your requirements.</p></div><a class="btn primary" href="contact.html">Upload for Review</a></div>
 </section>
 </main>
 <footer><div class="container">© 2026 DataInsightPro. Data analytics, dashboards & reporting.</div></footer>
-<script src="assets/app.js?v=3"></script>
-<script>
-const projectFile=document.getElementById('projectFile');
-const uploadStatus=document.getElementById('uploadStatus');
-if(projectFile&&uploadStatus){projectFile.addEventListener('change',()=>{const f=projectFile.files[0];if(f)uploadStatus.textContent='Selected: '+f.name+' • '+Math.max(1,Math.round(f.size/1024))+' KB';});}
-if(new URLSearchParams(location.search).get('sent')==='1'){uploadStatus.textContent='Your file was submitted. Please check your email for confirmation if this is your first submission.';}
-</script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="assets/app.js?v=4"></script>
 </body>
 </html>
