@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DataInsightPro | Analytics, Dashboards & Reporting</title>
 <meta name="description" content="Professional data analytics, dashboards, Excel analytics, data cleaning and KPI reporting solutions.">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link rel="stylesheet" href="assets/style.css?v=6">
 </head>
 <body>
 <header class="nav">
@@ -26,9 +26,9 @@
   <div>
     <p class="eyebrow">DATA • INSIGHTS • DECISIONS</p>
     <h1>Turn your data into <em>clear decisions.</em></h1>
-    <p class="lead">Professional analytics and business intelligence solutions that transform spreadsheets, CSV files and operational data into useful, management-ready insight.</p>
+    <p class="lead">Professional analytics and business intelligence solutions that transform spreadsheets, documents and operational data into useful, management-ready insight.</p>
     <div class="actions"><a class="btn primary" href="data-analysis.html">Analyze Your Data</a><a class="btn secondary" href="contact.html">Request a Solution</a></div>
-    <div class="trust-row"><span>✓ Excel & CSV</span><span>✓ Executive reporting</span><span>✓ Data-quality focused</span><span>✓ Browser-based tools</span></div>
+    <div class="trust-row"><span>✓ Excel & CSV</span><span>✓ PDF & Word</span><span>✓ Automatic charts</span><span>✓ Downloadable reports</span></div>
   </div>
   <div class="hero-card dashboard-preview">
     <div class="card-top"><span>Executive Overview</span><b>READY</b></div>
@@ -49,15 +49,18 @@
     <article><span class="icon">06</span><h3>Business Intelligence</h3><p>Connect operational data with business questions to support better decisions.</p><a href="case-studies.html">Explore →</a></article>
   </div>
 </section>
-<section class="section analyzer-wrap"><div class="container analyzer"><div><p class="eyebrow">FREE DATA CHECK</p><h2>Test your CSV instantly.</h2><p>Upload a CSV and get an instant overview of rows, columns, numeric fields and missing values. Your file stays in your browser.</p><label class="upload"><input id="csvFile" type="file" accept=".csv,text/csv"><span>Choose CSV file</span></label><div id="fileStatus" class="muted">No file selected.</div></div><div id="results" class="result-card"><div class="empty"><b>Quick data-quality check</b><br>Upload a CSV to see useful metrics here.</div></div></div></section>
+<section class="section analyzer-wrap"><div class="container analyzer"><div><p class="eyebrow">FREE DATA CHECK</p><h2>Test your file instantly.</h2><p>Upload Excel, CSV, PDF, Word, PowerPoint, JSON, text, images or another file. The analyzer will extract and profile supported content, generate charts when numeric data is available, and provide downloadable results.</p><label class="upload"><input id="csvFile" type="file"><span>Choose Any File</span></label><div id="fileStatus" class="muted">No file selected.</div></div><div id="results" class="result-card"><div class="empty"><b>Universal data check</b><br>Upload a file to see detected data, metrics and charts here.</div></div></div></section>
 <section class="section container">
   <div class="section-head"><div><p class="eyebrow">HOW IT WORKS</p><h2>A simple professional workflow.</h2></div><p>No unnecessary complexity. Start with the business question and finish with an output people can actually use.</p></div>
   <div class="steps four"><div><b>01</b><h3>Understand</h3><p>Define the business question and success metric.</p></div><div><b>02</b><h3>Prepare</h3><p>Clean, validate and structure the data.</p></div><div><b>03</b><h3>Analyze</h3><p>Measure patterns, trends and KPIs.</p></div><div><b>04</b><h3>Report</h3><p>Present clear findings and recommended actions.</p></div></div>
 </section>
-<section class="section container capabilities"><div class="section-head"><div><p class="eyebrow">CLIENT VALUE</p><h2>Built for practical reporting.</h2></div><p>Whether you have one spreadsheet or a recurring management report, the goal is reliable information that helps people act.</p></div><div class="cap-grid"><div><b>01</b><h3>Clear outputs</h3><p>KPIs, trends, summaries and visuals designed for quick understanding.</p></div><div><b>02</b><h3>Better data quality</h3><p>Identify missing and inconsistent information before it affects decisions.</p></div><div><b>03</b><h3>Flexible workflow</h3><p>Start with familiar Excel and CSV files and scale into dashboards and reporting.</p></div></div></section>
+<section class="section container capabilities"><div class="section-head"><div><p class="eyebrow">CLIENT VALUE</p><h2>Built for practical reporting.</h2></div><p>Whether you have one spreadsheet, a PDF report or a recurring management dataset, the goal is reliable information that helps people act.</p></div><div class="cap-grid"><div><b>01</b><h3>Clear outputs</h3><p>KPIs, trends, summaries and visuals designed for quick understanding.</p></div><div><b>02</b><h3>Better data quality</h3><p>Identify missing and inconsistent information before it affects decisions.</p></div><div><b>03</b><h3>Flexible workflow</h3><p>Start with familiar business files and scale into dashboards and reporting.</p></div></div></section>
 <section class="cta container"><p class="eyebrow">READY TO START?</p><h2>Make your data work harder.</h2><p>Tell us what you have, what you need to know and what output you want.</p><a class="btn primary" href="contact.html">Request a Consultation</a></section>
 </main>
 <footer><div class="container footer-inner"><div><a class="logo" href="index.html"><span>DI</span> DataInsightPro</a><p>Data analytics & business intelligence.</p></div><div><a href="data-analysis.html">Analysis</a><a href="dashboard.html">Dashboards</a><a href="excel-analytics.html">Excel</a><a href="reports.html">Reports</a><a href="contact.html">Contact</a></div></div><div class="container footer-bottom">© 2026 DataInsightPro · Built for better decisions.</div></footer>
-<script src="assets/app.js?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="assets/app.js?v=6"></script>
 </body>
 </html>
