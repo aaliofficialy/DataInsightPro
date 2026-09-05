@@ -1,1 +1,60 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact | DataInsightPro</title><link rel="stylesheet" href="assets/style.css"></head><body><header class="nav"><a class="logo" href="index.html"><span>DI</span> DataInsightPro</a><nav><a href="index.html">Home</a><a href="data-analysis.html">Analysis</a><a href="dashboard.html">Dashboards</a><a href="case-studies.html">Case Studies</a></nav></header><main><section class="hero container"><div><p class="eyebrow">GET STARTED</p><h1>Let's turn your data into insight.</h1><p class="lead">For a project, dashboard, KPI report or analytics workflow, prepare a sample description of your data and the decision you need to support.</p><a class="btn primary" href="mailto:contact@example.com?subject=DataInsightPro%20Project%20Inquiry">Start a Conversation</a></div><div class="hero-card"><div class="card-top"><span>Project Checklist</span><b>01–04</b></div><div class="metrics"><div class="metric"><b>01</b>Business goal</div><div class="metric"><b>02</b>Data source</div><div class="metric"><b>03</b>Desired output</div><div class="metric"><b>04</b>Timeline</div></div></div></section></main><footer><div class="container">© 2026 DataInsightPro.</div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | DataInsightPro</title>
+<link rel="stylesheet" href="assets/style.css?v=3">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="index.html"><span>DI</span> DataInsightPro</a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="siteNav">
+    <a href="index.html">Home</a>
+    <a href="data-analysis.html">Analysis</a>
+    <a href="dashboard.html">Dashboards</a>
+    <a href="excel-analytics.html">Excel</a>
+    <a href="case-studies.html">Case Studies</a>
+  </nav>
+</header>
+<main>
+<section class="hero container">
+  <div>
+    <p class="eyebrow">GET STARTED</p>
+    <h1>Let’s turn your data into insight.</h1>
+    <p class="lead">Send your project details and, if needed, attach the source file. Your submission is routed to our project email for review.</p>
+    <div class="trust-row"><span>✓ Data analysis</span><span>✓ Dashboards</span><span>✓ Excel automation</span><span>✓ Reporting</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="card-top"><span>Project Request</span><b>01–05</b></div>
+    <form action="https://formsubmit.co/mohammad.ali.official@hotmail.com" method="POST" enctype="multipart/form-data" class="file-form">
+      <input type="hidden" name="_subject" value="New DataInsightPro Project Request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://aaliofficialy.github.io/DataInsightPro/contact.html?sent=1">
+      <label>Full Name<input type="text" name="name" placeholder="Your name" required></label>
+      <label>Email<input type="email" name="email" placeholder="your@email.com" required></label>
+      <label>Requirement<textarea name="message" rows="4" placeholder="Tell us about your data, dashboard, report or analysis requirement." required></textarea></label>
+      <label>Attach File <span class="muted small">(optional — any common file type)</span><input type="file" name="attachment"></label>
+      <button class="btn primary" type="submit">Send Project Request</button>
+      <p id="contactStatus" class="muted" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+<section class="section container">
+  <div class="section-head"><div><p class="eyebrow">WHAT TO SEND</p><h2>Give us the context, not just the file.</h2></div></div>
+  <div class="grid">
+    <article><span class="icon">01</span><h3>Business goal</h3><p>What decision, problem or reporting requirement should the work support?</p></article>
+    <article><span class="icon">02</span><h3>Source data</h3><p>Excel, CSV, PDF, Word, PowerPoint, images or another project file can be attached.</p></article>
+    <article><span class="icon">03</span><h3>Desired output</h3><p>Tell us whether you need analysis, cleaning, dashboarding, automation or a management report.</p></article>
+  </div>
+</section>
+</main>
+<footer><div class="container">© 2026 DataInsightPro. Data analytics, dashboards & reporting.</div></footer>
+<script src="assets/app.js?v=3"></script>
+<script>
+if(new URLSearchParams(location.search).get('sent')==='1')document.getElementById('contactStatus').textContent='Your request was submitted successfully. Please check your email for confirmation if this is your first submission.';
+</script>
+</body>
+</html>
