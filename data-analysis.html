@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Data Analysis & File Upload | DataInsightPro</title>
-<link rel="stylesheet" href="assets/style.css?v=4">
+<title>Universal File Data Analysis | DataInsightPro</title>
+<link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 <header class="nav">
@@ -17,29 +17,31 @@
 <main>
 <section class="hero container">
   <div>
-    <p class="eyebrow">DATA ANALYSIS • FILE INTAKE</p>
-    <h1>Upload your data. Get instant insights.</h1>
-    <p class="lead">Upload Excel, CSV, JSON, TSV or text data and the browser will automatically profile the dataset, calculate data-quality metrics and generate charts from detected numeric fields.</p>
-    <div class="trust-row"><span>✓ Excel & CSV</span><span>✓ JSON & TSV</span><span>✓ Automatic metrics</span><span>✓ Charts</span></div>
-    <p class="muted" style="margin-top:18px">For PDF, Word, PowerPoint, images and other files, use the upload form to send the original file for project review.</p>
+    <p class="eyebrow">UNIVERSAL FILE ANALYZER</p>
+    <h1>Upload almost any file. Get analysis, charts & downloads.</h1>
+    <p class="lead">Upload Excel, CSV, JSON, TSV, TXT, PDF, Word, PowerPoint or images. The browser extracts usable text/table data, profiles it, detects numeric fields, generates charts where possible and lets you download the analysis.</p>
+    <div class="trust-row"><span>✓ Excel & CSV</span><span>✓ PDF & Word</span><span>✓ PowerPoint</span><span>✓ Images + OCR</span><span>✓ Charts + Downloads</span></div>
   </div>
   <div class="result-card upload-card">
-    <div class="card-top"><span>Instant Data Analyzer</span><b>LOCAL</b></div>
-    <label class="upload"><input id="csvFile" type="file" accept=".csv,.tsv,.xlsx,.xls,.json,.txt,.log,text/csv,application/json,text/plain"><span>Choose Data File</span></label>
+    <div class="card-top"><span>Universal Data Analyzer</span><b>LOCAL</b></div>
+    <label class="upload"><input id="csvFile" type="file" accept=".csv,.tsv,.xlsx,.xls,.json,.txt,.log,.pdf,.doc,.docx,.ppt,.pptx,image/*"><span>Choose Any File</span></label>
     <div id="fileStatus" class="muted">No file selected.</div>
-    <div id="results" class="result-card"><div class="empty">Upload a data file to generate rows, columns, missing-cell metrics and charts.</div></div>
+    <div id="results" class="result-card"><div class="empty">Upload a file to extract data, calculate quality metrics and generate charts.</div></div>
   </div>
 </section>
 <section class="section analyzer-wrap">
-  <div class="container"><div class="section-head"><div><p class="eyebrow">WHAT IT DOES</p><h2>Automatic analysis in your browser.</h2><p class="muted">Your selected data file is processed locally for the instant preview. No server upload is required for this analysis.</p></div></div>
-  <div class="grid"><article><span class="icon">01</span><h3>Dataset profile</h3><p>Rows, columns, numeric fields and missing cells are detected automatically.</p></article><article><span class="icon">02</span><h3>Data quality</h3><p>Completeness is estimated from populated cells so you can spot quality issues quickly.</p></article><article><span class="icon">03</span><h3>Charts</h3><p>Detected numeric columns are visualized automatically to reveal patterns at a glance.</p></article></div></div>
+  <div class="container"><div class="section-head"><div><p class="eyebrow">SUPPORTED INPUTS</p><h2>One upload area for your common business files.</h2><p class="muted">Tabular files get full numeric analysis and charts. Documents and presentations are converted to readable text and scanned for numbers; images use OCR. Everything in the instant preview is processed in your browser.</p></div></div>
+  <div class="grid"><article><span class="icon">01</span><h3>Structured data</h3><p>Excel, CSV, TSV and JSON are profiled with rows, columns, missing cells, numeric fields and charts.</p></article><article><span class="icon">02</span><h3>Documents</h3><p>PDF, DOCX and PPTX text is extracted in-browser and numeric content is analyzed when it forms usable data.</p></article><article><span class="icon">03</span><h3>Visual files</h3><p>Images can be read with OCR, then extracted numeric content can be analyzed when the source contains data.</p></article></div></div>
 </section>
 <section class="section container">
-  <div class="section-head"><div><p class="eyebrow">PROJECT UPLOAD</p><h2>Need analysis of another file type?</h2><p class="muted">Send PDF, Word, PowerPoint, images or any other project file to the team with your requirements.</p></div><a class="btn primary" href="contact.html">Upload for Review</a></div>
+  <div class="section-head"><div><p class="eyebrow">EXPORT</p><h2>Download your analysis.</h2><p class="muted">After processing, use the export buttons in the result card for an Excel workbook, CSV summary, printable HTML report and chart images.</p></div></div>
 </section>
 </main>
 <footer><div class="container">© 2026 DataInsightPro. Data analytics, dashboards & reporting.</div></footer>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<script src="assets/app.js?v=4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="assets/app.js?v=6"></script>
 </body>
 </html>
