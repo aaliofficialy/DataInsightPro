@@ -3,15 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DataInsightPro | Data Analytics & Business Intelligence</title>
-<meta name="description" content="Professional data analytics, dashboards, Excel reporting, data cleaning and business intelligence tools for practical decision-making.">
-<link rel="stylesheet" href="assets/style.css?v=11">
-<link rel="stylesheet" href="assets/home.css?v=1">
+<title>DataInsightPro | Data Analytics, Forms & Business Intelligence</title>
+<meta name="description" content="DataInsightPro provides practical data analysis, dashboards, Excel analytics, data quality checks, KPI reporting and form-building tools.">
+<meta name="theme-color" content="#07110f">
+<meta property="og:title" content="DataInsightPro | Data Analytics & Business Intelligence">
+<meta property="og:description" content="Turn raw data into clear insights, dashboards, reports and useful business outputs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aaliofficialy.github.io/DataInsightPro/">
+<link rel="canonical" href="https://aaliofficialy.github.io/DataInsightPro/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=12">
+<link rel="stylesheet" href="assets/home.css?v=2">
 </head>
 <body class="home-page">
 <header class="nav">
   <a class="logo" href="index.html" aria-label="DataInsightPro home"><span>DI</span> DataInsightPro</a>
-  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
   <nav id="siteNav" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="data-analysis.html">Analyze</a>
@@ -19,6 +26,7 @@
     <a href="excel-analytics.html">Excel</a>
     <a href="form-builder.html">Forms</a>
     <a href="entries-v4.html">Entries</a>
+    <a href="calculator.html">Calculator</a>
     <a class="nav-cta" href="contact.html">Get Started</a>
   </nav>
 </header>
@@ -28,25 +36,23 @@
   <div class="container home-hero-grid">
     <div class="home-hero-copy">
       <p class="eyebrow">DATA • INSIGHTS • DECISIONS</p>
-      <h1>From raw data to <em>better decisions.</em></h1>
-      <p class="lead">DataInsightPro turns spreadsheets, documents and operational data into clear analysis, dashboards, reports and practical business insight.</p>
+      <h1>Turn raw data into <em>better decisions.</em></h1>
+      <p class="lead">Analyze spreadsheets and operational data, build dashboards, collect form entries and produce clear, downloadable business outputs from one practical toolkit.</p>
       <div class="home-actions">
-        <a class="btn primary" href="data-analysis.html">Analyze Your Data</a>
-        <a class="btn secondary" href="form-builder.html">Build a Form</a>
+        <a class="btn primary" href="data-analysis.html">Start Analyzing</a>
+        <a class="btn secondary" href="form-builder.html">Create a Form</a>
       </div>
       <div class="home-trust">
-        <span>✓ Excel & CSV</span><span>✓ PDF & Word</span><span>✓ Charts & KPIs</span><span>✓ Local data processing</span>
+        <span>✓ Excel & CSV</span><span>✓ PDF & Word</span><span>✓ Charts & KPIs</span><span>✓ Browser-based</span>
       </div>
     </div>
-    <div class="home-dashboard" aria-label="Analytics dashboard preview">
-      <div class="home-dash-top"><span>Executive Overview</span><span class="home-status">● LIVE ANALYTICS</span></div>
+    <div class="home-dashboard" aria-label="Sample analytics dashboard preview">
+      <div class="home-dash-top"><span>Sample Executive Overview</span><span class="home-status">● DEMO VIEW</span></div>
       <div class="home-kpis">
-        <div class="home-kpi"><small>Performance Index</small><strong>84.7%</strong><span class="up">↗ 12.4% vs previous</span></div>
-        <div class="home-kpi"><small>Records Processed</small><strong>12.8K</strong><span class="up">✓ Ready to report</span></div>
+        <div class="home-kpi"><small>Performance Index</small><strong>84.7%</strong><span class="up">↗ Sample KPI</span></div>
+        <div class="home-kpi"><small>Records Processed</small><strong>12.8K</strong><span class="up">✓ Example output</span></div>
       </div>
-      <div class="home-chart" aria-hidden="true">
-        <i style="--h:42%"></i><i style="--h:61%"></i><i style="--h:53%"></i><i style="--h:73%"></i><i style="--h:66%"></i><i style="--h:89%"></i><i style="--h:78%"></i><i style="--h:96%"></i>
-      </div>
+      <div class="home-chart" aria-hidden="true"><i style="--h:42%"></i><i style="--h:61%"></i><i style="--h:53%"></i><i style="--h:73%"></i><i style="--h:66%"></i><i style="--h:89%"></i><i style="--h:78%"></i><i style="--h:96%"></i></div>
       <div class="home-chart-labels"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span></div>
       <div class="home-dash-bottom"><span>Data quality <b>96%</b></span><span>Trend <b>Positive ↗</b></span></div>
     </div>
@@ -63,82 +69,38 @@
 </section>
 
 <section class="home-section container">
-  <div class="home-section-head">
-    <div><p class="eyebrow">PROFESSIONAL TOOLKIT</p><h2>Everything you need to work with data.</h2></div>
-    <p>Use one tool or combine the workflow. Each service is designed around a simple goal: turn information into something people can understand and use.</p>
-  </div>
+  <div class="home-section-head"><div><p class="eyebrow">PROFESSIONAL TOOLKIT</p><h2>Everything you need to work with data.</h2></div><p>Use one tool or combine the workflow. Each part is designed around a simple goal: turn information into something people can understand and use.</p></div>
   <div class="home-services">
     <article class="home-service"><span class="num">01</span><h3>Data Analysis</h3><p>Explore rows, columns, numeric fields, missing values, duplicates, trends and KPIs.</p><a href="data-analysis.html">Open analyzer →</a></article>
     <article class="home-service"><span class="num">02</span><h3>Interactive Dashboards</h3><p>Create management-ready visual summaries that make important metrics easy to read.</p><a href="dashboard.html">View dashboards →</a></article>
     <article class="home-service"><span class="num">03</span><h3>Excel Analytics</h3><p>Work with Excel and CSV files to produce structured summaries and downloadable outputs.</p><a href="excel-analytics.html">Explore Excel tools →</a></article>
-    <article class="home-service"><span class="num">04</span><h3>Data Cleaning</h3><p>Find missing, duplicate and inconsistent information before it creates reporting problems.</p><a href="data-cleaning.html">Clean your data →</a></article>
+    <article class="home-service"><span class="num">04</span><h3>Data Quality</h3><p>Find missing, duplicate and inconsistent information before it creates reporting problems.</p><a href="data-cleaning.html">Check data quality →</a></article>
     <article class="home-service"><span class="num">05</span><h3>Reports & KPIs</h3><p>Turn operational information into focused management reports and measurable indicators.</p><a href="reports.html">View reporting →</a></article>
-    <article class="home-service"><span class="num">06</span><h3>Form Builder</h3><p>Build shareable forms, collect entries locally and download the submitted data when needed.</p><a href="form-builder.html">Build a form →</a></article>
+    <article class="home-service"><span class="num">06</span><h3>Form Builder</h3><p>Build shareable forms, collect entries locally and download submitted data when needed.</p><a href="form-builder.html">Build a form →</a></article>
   </div>
 </section>
 
 <section class="home-tool">
   <div class="container home-section home-tool-grid">
-    <div class="home-tool-copy">
-      <p class="eyebrow">FREE DATA CHECK</p>
-      <h2>Test a file before you commit to a workflow.</h2>
-      <p>Upload a business file and inspect its structure directly in your browser. The analyzer can identify usable fields, missing cells, duplicates, data quality and numeric patterns.</p>
-      <div class="home-tool-list"><div><b>Fast</b>Browser-based processing</div><div><b>Flexible</b>Multiple business file types</div><div><b>Visual</b>Charts and KPI summaries</div><div><b>Exportable</b>Excel, CSV, PDF and reports</div></div>
-    </div>
-    <div class="home-upload-card">
-      <label class="upload"><input id="csvFile" type="file"><span>Choose a File to Analyze</span></label>
-      <div id="fileStatus" class="muted">No file selected.</div>
-      <div id="results" class="result-card"><div class="empty"><b>Universal data check</b><br>Upload a file to generate a professional analysis preview.</div></div>
-    </div>
+    <div class="home-tool-copy"><p class="eyebrow">FREE DATA CHECK</p><h2>Test a file before you commit to a workflow.</h2><p>Upload a business file and inspect its structure directly in your browser. The analyzer can identify usable fields, missing cells, duplicates, data quality and numeric patterns.</p><div class="home-tool-list"><div><b>Fast</b>Browser-based processing</div><div><b>Flexible</b>Multiple business file types</div><div><b>Visual</b>Charts and KPI summaries</div><div><b>Exportable</b>Excel, CSV, PDF and reports</div></div></div>
+    <div class="home-upload-card"><label class="upload"><input id="csvFile" type="file"><span>Choose a File to Analyze</span></label><div id="fileStatus" class="muted">No file selected.</div><div id="results" class="result-card"><div class="empty"><b>Universal data check</b><br>Upload a file to generate a professional analysis preview.</div></div></div>
   </div>
 </section>
 
 <section class="home-section container">
-  <div class="home-section-head">
-    <div><p class="eyebrow">HOW IT WORKS</p><h2>A clean workflow from question to action.</h2></div>
-    <p>No unnecessary complexity. Start with the question, improve the data, analyze what matters and deliver an output people can act on.</p>
-  </div>
-  <div class="home-workflow">
-    <div class="home-step"><b>01</b><h3>Understand</h3><p>Define the business question and the outcome you need.</p></div>
-    <div class="home-step"><b>02</b><h3>Prepare</h3><p>Clean, validate and structure the available information.</p></div>
-    <div class="home-step"><b>03</b><h3>Analyze</h3><p>Measure KPIs, patterns, trends and useful comparisons.</p></div>
-    <div class="home-step"><b>04</b><h3>Report</h3><p>Deliver clear visuals, findings and downloadable outputs.</p></div>
-  </div>
+  <div class="home-section-head"><div><p class="eyebrow">HOW IT WORKS</p><h2>A clean workflow from question to action.</h2></div><p>No unnecessary complexity. Start with the question, improve the data, analyze what matters and deliver an output people can act on.</p></div>
+  <div class="home-workflow"><div class="home-step"><b>01</b><h3>Understand</h3><p>Define the business question and the outcome you need.</p></div><div class="home-step"><b>02</b><h3>Prepare</h3><p>Clean, validate and structure the available information.</p></div><div class="home-step"><b>03</b><h3>Analyze</h3><p>Measure KPIs, patterns, trends and useful comparisons.</p></div><div class="home-step"><b>04</b><h3>Report</h3><p>Deliver clear visuals, findings and downloadable outputs.</p></div></div>
 </section>
 
 <section class="home-section container">
-  <div class="home-section-head">
-    <div><p class="eyebrow">WHY DATAINSIGHTPRO</p><h2>Designed for practical work.</h2></div>
-    <p>Built for teams, departments, analysts and businesses that need useful answers—not complicated software.</p>
-  </div>
-  <div class="home-services">
-    <article class="home-service"><span class="num">A</span><h3>Clear outputs</h3><p>KPIs, summaries, charts and reports are presented for quick understanding.</p></article>
-    <article class="home-service"><span class="num">B</span><h3>Flexible tools</h3><p>Move from a single spreadsheet to recurring dashboards and reporting workflows.</p></article>
-    <article class="home-service"><span class="num">C</span><h3>Better decisions</h3><p>Focus analysis on the information that supports real operational decisions.</p></article>
-  </div>
+  <div class="home-section-head"><div><p class="eyebrow">WHY DATAINSIGHTPRO</p><h2>Designed for practical work.</h2></div><p>Built for teams, departments, analysts and businesses that need useful answers—not complicated software.</p></div>
+  <div class="home-services"><article class="home-service"><span class="num">A</span><h3>Clear outputs</h3><p>KPIs, summaries, charts and reports are presented for quick understanding.</p></article><article class="home-service"><span class="num">B</span><h3>Flexible tools</h3><p>Move from a single spreadsheet to recurring dashboards and reporting workflows.</p></article><article class="home-service"><span class="num">C</span><h3>Better decisions</h3><p>Focus analysis on the information that supports real operational decisions.</p></article></div>
 </section>
 
-<section class="home-final container">
-  <p class="eyebrow">READY TO START?</p>
-  <h2>Make your data work harder.</h2>
-  <p>Analyze a file yourself, build a data collection form, or request a professional analytics solution for your project.</p>
-  <div class="home-actions" style="justify-content:center"><a class="btn primary" href="data-analysis.html">Start Analyzing</a><a class="btn secondary" href="contact.html">Request a Solution</a></div>
-</section>
+<section class="home-final container"><p class="eyebrow">READY TO START?</p><h2>Make your data work harder.</h2><p>Analyze a file yourself, build a data collection form, or request a professional analytics solution for your project.</p><div class="home-actions" style="justify-content:center"><a class="btn primary" href="data-analysis.html">Start Analyzing</a><a class="btn secondary" href="contact.html">Request a Solution</a></div></section>
 </main>
 
-<footer>
-  <div class="container footer-inner">
-    <div><a class="logo" href="index.html"><span>DI</span> DataInsightPro</a><p>Data analytics & business intelligence.</p></div>
-    <div><a href="data-analysis.html">Analysis</a><a href="dashboard.html">Dashboards</a><a href="excel-analytics.html">Excel</a><a href="form-builder.html">Forms</a><a href="entries-v4.html">Entries</a><a href="contact.html">Contact</a></div>
-  </div>
-  <div class="container footer-bottom">© 2026 DataInsightPro · Built for better decisions.</div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.1/tesseract.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="assets/app.js?v=11"></script>
+<footer><div class="container footer-inner"><div><a class="logo" href="index.html"><span>DI</span> DataInsightPro</a><p>Data analytics & business intelligence.</p></div><div><a href="data-analysis.html">Analysis</a><a href="dashboard.html">Dashboards</a><a href="excel-analytics.html">Excel</a><a href="form-builder.html">Forms</a><a href="entries-v4.html">Entries</a><a href="calculator.html">Calculator</a><a href="contact.html">Contact</a></div></div><div class="container footer-bottom">© 2026 DataInsightPro · Built for better decisions.</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.1/tesseract.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><script src="assets/app.js?v=12"></script>
 </body>
 </html>
