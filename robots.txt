@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aaliofficialy.github.io/DataInsightPro/sitemap.xml
