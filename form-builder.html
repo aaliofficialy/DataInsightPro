@@ -1,1 +1,28 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Custom Form Builder | DataInsightPro</title><link rel="stylesheet" href="assets/style.css?v=10"><link rel="stylesheet" href="assets/form-tools.css?v=4"></head><body><header class="nav"><a class="logo" href="index.html"><span>DI</span> DataInsightPro</a><nav><a href="data-analysis.html">Analysis</a><a href="form-builder.html">Form Builder</a><a href="entries.html">Entries</a><a class="nav-cta" href="data-analysis.html#calculator">Calculator</a></nav></header><main class="section container"><div id="formBuilder"></div><section class="section"><div class="insight-panel"><h3>How entries work</h3><p><b>Local mode (no Google Sheet):</b> create a form, generate the link, submit entries, view them in Entries, correct mistakes, delete records and download CSV/Excel/PDF/Word. Nothing external is required.</p><p><b>Shared mode (optional):</b> connect the included Google Apps Script Web App if you want submissions from different PCs/phones to appear in one shared Google Sheet. The generated form still keeps a local copy of each submission.</p></div></section></main><script src="assets/form-tools.js?v=4"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Create professional data-entry forms with DataInsightPro Form Builder.">
+<title>Form Builder | DataInsightPro</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=19">
+<link rel="stylesheet" href="assets/form-tools.css?v=4">
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="index.html"><span>DI</span> DataInsightPro</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav id="siteNav">
+<a href="index.html">Home</a><a href="data-analysis.html">Analyze</a><a href="dashboard.html">Dashboards</a><a href="excel-analytics.html">Excel</a><a href="form-builder.html">Forms</a><a href="entries-v4.html">Entries</a><a href="calculator.html">Calculator</a><a class="nav-cta" href="contact.html">Get Started</a>
+</nav>
+</header>
+<main class="section container">
+<div id="formBuilder"></div>
+<section class="section"><div class="insight-panel"><h3>How entries work</h3><p><b>Local mode (no Google Sheet):</b> create a form, generate the link, submit entries, view them in Entries, correct mistakes, delete records and download CSV/Excel/PDF/Word. Nothing external is required.</p><p><b>Shared mode (optional):</b> connect the included Google Apps Script Web App if you want submissions from different PCs/phones to appear in one shared Google Sheet. The generated form still keeps a local copy of each submission.</p></div></section>
+</main>
+<script src="assets/app.js?v=19"></script>
+<script src="assets/form-tools.js?v=5"></script>
+<script>document.getElementById('menuToggle')?.addEventListener('click',()=>{const n=document.getElementById('siteNav');const b=document.getElementById('menuToggle');n.classList.toggle('open');b.setAttribute('aria-expanded',n.classList.contains('open'))});</script>
+</body>
+</html>
