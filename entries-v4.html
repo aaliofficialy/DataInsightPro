@@ -1,1 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Form Entries | DataInsightPro</title><link rel="stylesheet" href="assets/style.css?v=10"><link rel="stylesheet" href="assets/form-tools.css?v=4"><script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head><body><header class="nav"><a class="logo" href="index.html"><span>DI</span> DataInsightPro</a><nav><a href="data-analysis.html">Analysis</a><a href="form-builder.html">Form Builder</a><a href="entries-v4.html">Entries</a><a class="nav-cta" href="data-analysis.html#calculator">Calculator</a></nav></header><main class="section container"><div id="entries"></div></main><script src="assets/form-tools.js?v=4"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Manage, edit and export DataInsightPro form entries.">
+<title>Form Entries | DataInsightPro</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=19">
+<link rel="stylesheet" href="assets/form-tools.css?v=4">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="index.html"><span>DI</span> DataInsightPro</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav id="siteNav">
+<a href="index.html">Home</a><a href="data-analysis.html">Analyze</a><a href="dashboard.html">Dashboards</a><a href="excel-analytics.html">Excel</a><a href="form-builder.html">Forms</a><a href="entries-v4.html">Entries</a><a href="calculator.html">Calculator</a><a class="nav-cta" href="contact.html">Get Started</a>
+</nav>
+</header>
+<main class="section container"><div id="entries"></div></main>
+<script src="assets/app.js?v=19"></script>
+<script src="assets/form-tools.js?v=5"></script>
+<script>document.getElementById('menuToggle')?.addEventListener('click',()=>{const n=document.getElementById('siteNav');const b=document.getElementById('menuToggle');n.classList.toggle('open');b.setAttribute('aria-expanded',n.classList.contains('open'))});</script>
+</body>
+</html>
