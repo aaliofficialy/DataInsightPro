@@ -1,0 +1,13 @@
+{
+  "name": "DataInsightPro",
+  "short_name": "DataInsightPro",
+  "description": "Practical data analytics, dashboards, Excel tools, reporting and form-building utilities.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07110f",
+  "theme_color": "#07110f",
+  "icons": [
+    {"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
